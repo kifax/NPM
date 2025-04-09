@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Aggregator</title>
+<link rel="stylesheet" href="SlutP.css">
+</head>
+<body>
+  <div class="header">
+    <h1>News</h1>
+  </div>
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search">
+    <button onclick="handleSearch()">Search</button>
+  </div>
+  <div class="categories">
+    <button onclick="filterNews('general')">General</button>
+    <button onclick="filterNews('sports')">Sports</button>
+    <button onclick="filterNews('culture')">culture</button>
+    <button onclick="filterNews('earth')">earth</button>
+  </div>
+  <div class="news-container" id="news-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
