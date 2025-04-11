@@ -1,27 +1,67 @@
 header h1{
     text-align: center;
 }
-.navbar ul {
-    list-style-type: none;
-    background-color: rgb(206, 208, 235);
-    padding: 0;
-    margin: 0;
-    grid-template-columns: 10px 1fr 2fr 10px;
-    grid-template-rows: 1fr 3fr 1fr;
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 0.5fr 4fr 1fr;
 
     grid-template-areas: 
-    ". header header . "
-    ".nav main ."
-    ".footer footer .";
+    "header header header header"
+    "navbar navbar navbar navbar "
+    "main main aside aside"
+    "footer footer footer footer ";
+}
 
-    overflow:hidden ;
+
+.header {
+    grid-area: header;
+    background-image: url(/assets/blue.jpg);
+    background-size: contain;
+}
+
+
+
+.navbar {
+    grid-area: navbar;
+    background-color:   rgba(124, 184, 233, 0);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(135, 184, 224);
+}
+
+.main img{
+    width: 400px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color:rgb(197, 227, 252);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.aside img{
+    width: 700px;
+    border: 10px;
 
 
 }
 
+.footer {
+    grid-area: footer;
+    background-color: rgb(194, 219, 240);
+    border: 2px solid rgb(136, 136, 233);
+}
 
+.navbar ul {
+    list-style-type: none;
+}
 .navbar a{
-    color:  rgb(98, 106, 228);
+    color:  rgb(206, 208, 235);
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -29,16 +69,12 @@ header h1{
 }
 
 .navbar a:hover{
-    background-color: rgb(137, 141, 219);
+    background-color:   rgb(145, 194, 235);
     transition: 0.5s;
 }
 
 .navbar li{
     float: left;
-}
-
-.main{
-    padding: 9vh;
 }
 
 
