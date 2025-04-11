@@ -6,10 +6,19 @@ header h1{
     background-color: rgb(206, 208, 235);
     padding: 0;
     margin: 0;
+    grid-template-columns: 10px 1fr 2fr 10px;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    grid-template-areas: 
+    ". header header . "
+    ".nav main ."
+    ".footer footer .";
 
     overflow:hidden ;
 
+
 }
+
 
 .navbar a{
     color:  rgb(98, 106, 228);
