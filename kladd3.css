@@ -91,3 +91,84 @@ body{
 .nav li{
     float: left;
 }
+.navbar-end{
+    margin-top: 1px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* valfri bakgrund */
+    padding: 10px;
+}
+
+.nav-left {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.nav-left li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* valfri bakgrund */
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-left a,
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1000px;
+}
+
+
+
+
+
+
