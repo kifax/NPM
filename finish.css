@@ -18,7 +18,7 @@ body {
 
 .header {
     grid-area: header;
-    background-image: url(/assets/blue.jpg);
+    background-image: url(/assets/grey.jpg);
     background-size: contain;
 }
 
@@ -26,12 +26,12 @@ body {
 
 .navbar {
     grid-area: navbar;
-    background-color:   rgba(124, 184, 233, 0);
+    background-color:  white
 }
 
 .main {
     grid-area: main;
-    background-color: rgb(135, 184, 224);
+    background-color:white
 }
 
 .main img{
@@ -40,7 +40,7 @@ body {
 
 .aside {
     grid-area: aside;
-    background-color:rgb(197, 227, 252);
+    background-color:white
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -53,8 +53,8 @@ body {
 
 .footer {
     grid-area: footer;
-    background-color: rgb(194, 219, 240);
-    border: 2px solid rgb(136, 136, 233);
+    background-color: lightgrey;
+    border: 2px solid grey;
 }
 
 .navbar ul {
@@ -69,7 +69,7 @@ body {
 }
 
 .navbar a:hover{
-    background-color:   rgb(145, 194, 235);
+    background-color:   grey;
     transition: 0.5s;
 }
 
